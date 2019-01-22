@@ -176,8 +176,15 @@ header#top #toggle-nav, header#top #mobile-cart-link, header#top .span_9 > .slid
     align-items: center
     justify-content: center
 
+.svt-nectar-button
+    @media (max-width: 1001px)
+        width: 100% !important
+        margin-left: 0px !important
+
 // ICONS
 .pictos
+    @media (max-width: 1001px)
+        display: none
     .img-with-aniamtion-wrap.center
         display: flex
         justify-content: center
@@ -195,3 +202,65 @@ header#top #toggle-nav, header#top #mobile-cart-link, header#top .span_9 > .slid
 // HEADLINE ROW
 .headline-row
     margin-bottom: 10px
+
+// REFERENCE BOX
+.reference-preview
+    .vc_col-sm-4.reference-preview-text.wpb_column.column_container.vc_column_container.col.padding-2-percent
+        margin-left: 0px !important
+    .reference-preview-img
+        min-height: 300px
+
+//R&D
+.randd-box
+    margin-bottom: 60px !important
+
+
+//CONTACT BOX
+.contact-box
+    .contact-box-img
+        min-height: 300px 
+    .wpb_wrapper
+        min-height: 327px !important
+        @media (max-width: 1300px)
+            min-height: 450px !important
+        @media (max-width: 1001px)
+            min-height: 1px !important
+
+
+// HOVER BOX
+.svt-hover-box
+    .svt-hover-img
+        overflow: hidden
+        .row-bg-wrap
+            height: 450px
+        .svt-hover-text
+            position: absolute
+            transform: translateY(-68px)
+            background: $main-color
+            transition: 0.3s
+            cursor: pointer
+            &:after
+                content: ""
+                position: absolute
+                left: calc(50% - 20px)
+                top: -10px
+                background-color: $main-color
+                height: 40px
+                width: 40px
+                transform: rotate(45deg)
+                visibility: visible
+                z-index: -99999
+            p
+                padding: 5%
+                padding-top: 0%
+                color: white
+            &:hover
+                transform: translateY(-100%)
+
+//RUECKSTELLPROBEN
+#rueckstellproben-headline
+    margin-top: 9px !important
+    @media (max-width: 1001px)
+        margin-top: 20px !important
+    @media (max-width: 690px)
+        margin-top: 9px !important
