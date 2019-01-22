@@ -1,0 +1,129 @@
+#header-outer
+    padding: 0px !important
+    height: 82px !important
+    .container
+        padding: 0px 0px 0px 28px !important
+        .sub-menu
+            left: -28px !important
+            z-index: -999999
+            background-color: $main-color !important
+            border-top: 0px !important
+            a
+                color: white !important
+                font-weight: 300px !important
+        .col.span_3
+            margin-right: 10px !important
+        .menu-item.menu-item-type-custom.menu-item-object-custom
+            a
+                padding-top: 30px !important
+                padding-bottom: 30px !important
+                color: black
+        #menu-item-27.menu-item.menu-item-type-custom.menu-item-object-custom.current_page_item.menu-item-27
+            a
+                pointer-events: none
+                cursor: default
+                padding-left: 0px !important
+                text-transform: lowercase
+                color: lightgrey !important
+                font-style: italic
+                font-size: 14px
+    .right-aligned-menu-items
+        height: 82px !important
+        .buttons
+            height: 82px !important
+        #menu-item-25
+            a
+                color: $main-color
+                padding-right: 43px !important
+            &:before
+                content: "\f019"
+                font-family: "Font Awesome 5 Free"
+                font-weight: 900
+                position: absolute
+                right: 20px
+                top: 62px
+                color: $main-color
+            //&:hover
+                a
+                    color: black !important
+        #menu-item-26.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-26
+            width: 228px
+            cursor: pointer
+            a
+                background-color: $main-color
+                color: white
+                padding-left: 40px !important
+                padding-right: 40px !important
+                pointer-events: none !important
+                &:hover
+                    color: white !important
+                    &:after
+                        top: 100px
+            &:after
+                content: ""
+                position: absolute
+                left: calc(50% - 20px)
+                top: 80px
+                background-color: $main-color
+                height: 40px
+                width: 40px
+                transform: rotate(45deg)
+                z-index: -9999
+                transition: ease-in-out 0.2s
+                box-shadow: 0 0 3px 0 rgba(0,0,0,0.22) !important
+            &:hover
+                &:after
+                    top: 85px
+            &:before
+                content: "[contact-form-7 id="174" title="Contact form 1"]"
+                position: absolute
+                right: 78px
+                top: 80px
+                background-color: black
+                height: 40px
+                width: 40px
+                transform: rotate(45deg)
+                z-index: 9999
+                transition: ease-in-out 0.2s
+#menu-item-27.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-27
+    a
+        pointer-events: none
+        cursor: default
+        padding-left: 0px !important
+        text-transform: lowercase
+        color: lightgrey !important
+        font-style: italic
+        font-size: 14px
+        visibility: visible !important
+
+.menuopen
+    .menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-27
+        display: none
+
+.fullscreen-header
+    .row
+        @media (max-width: 1000px)
+            display: none
+        .col.span_6
+            .inner-wrap
+                h1
+                    &:before
+                        display: block
+                        position: absolute
+                        content: ""
+                        height: 3px
+                        width: 170px
+                        right: 0px
+                        top: -15px
+                        background-color: $main-color
+
+// BURGER
+.slide-out-widget-area-toggle.mobile-icon.slide-out-widget-area-toggle
+    @media only screen and (max-width: 1000px) and (min-width: 1px)
+        top: 30% !important
+        right: 5% !important
+
+
+// HOVER BLOCKS
+.svt-hover-blocks
+    

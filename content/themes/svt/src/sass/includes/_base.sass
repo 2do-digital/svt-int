@@ -1,0 +1,27 @@
+//BASE
+*
+    font-size: 16px
+    line-height: 1.4
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+//SHADOW
+[data-shadow="small_depth"]
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2) !important
+
+//LIST ARROWS
+.iwt-text ul, .solution-2columns ul, .reference-preview ul
+    margin: 0
+    li
+        list-style: none
+        padding-left: 1.5em
+        margin-bottom: 4px
+        &:before
+            content: "\f105"
+            font-weight: 900
+            color: $main-color
+            font-family: FontAwesome
+            display: inline-block
+            margin-left: -1em
+            width: 1em
