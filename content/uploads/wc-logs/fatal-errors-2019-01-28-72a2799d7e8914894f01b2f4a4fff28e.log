@@ -1,0 +1,4 @@
+2019-01-28T10:31:51+00:00 CRITICAL syntax error, unexpected '}' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 118
+
+2019-01-28T14:26:27+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /Users/tom/Documents/websites/svt-int/content/themes/svt/single.php in Zeile 53
+
