@@ -24,6 +24,10 @@ function get_images_attachment_url()
   return $images_urls;
 }
 
+function get_relative_permalink( $url ) {
+  return str_replace( home_url(), "", $url );
+}
+
 
 
 ?>

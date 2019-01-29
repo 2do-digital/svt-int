@@ -2,6 +2,8 @@
     background: #F7F7F7
     box-shadow: 0 3px 6px rgba(black, 0.2)
     padding: 20px
+    position: relative
+    z-index: 100
     .filter--container
         max-width: 1400px
         margin: 0 auto
@@ -33,6 +35,7 @@ body[data-fancy-form-rcs="1"] [type="radio"]:checked+label
 .products--wrapper
     display: flex
     margin-top: 40px
+    flex-wrap: wrap
 
     .filter--categories
         min-width: 250px
@@ -53,9 +56,27 @@ body[data-fancy-form-rcs="1"] [type="radio"]:checked+label
         flex-wrap: wrap
         flex: 1 0 0
         max-width: 1000px
+        .pagination
+            display: block
+            width: 100%
+            min-width: 100%
+            margin-bottom: 40px
+            .page-numbers
+                display: inline-block
+                margin: 0 5px
+            .next, .prev
+                text-align: center
+                width: 20px
+                height: 20px
+                color: white
+                display: inline-block
+                background: $main-color
         .products--item
-            width: 215px
+           
+            min-width: 180px
+            max-width: 215px
             margin: 0 20px 20px 0
+            background: $main-color
             .products--image
                 max-width: 100%
                 margin: 0
@@ -70,7 +91,7 @@ body[data-fancy-form-rcs="1"] [type="radio"]:checked+label
                 .products--title
                     color: white
                     line-height: 1.4
-                    font-size: 1.2em
+                    font-size: 1.0em
                     text-transform: uppercase
                     margin: 0
                 .products--subtitle

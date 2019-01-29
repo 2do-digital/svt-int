@@ -7,168 +7,124 @@ nectar_page_header($post->ID);
 //full page
 $fp_options = nectar_get_full_page_options();
 extract($fp_options);
-
 ?>
 
 <div class="container-wrap">
 	
-	<div class="<?php if($page_full_screen_rows != 'on') echo 'container'; ?> main-content">
-		
-		<div class="row">
-			
-			<?php 
-
-			//breadcrumbs
-			if ( function_exists( 'yoast_breadcrumb' ) && !is_home() && !is_front_page() ){ yoast_breadcrumb('<p id="breadcrumbs">','</p>'); } 
-
-			 //buddypress
-			 global $bp; 
-			 if($bp && !bp_is_blog_page()) echo '<h1>' . get_the_title() . '</h1>';
-			
-			 //fullscreen rows
-			 if($page_full_screen_rows == 'on') echo '<div id="nectar_fullscreen_rows" data-animation="'.$page_full_screen_rows_animation.'" data-row-bg-animation="'.$page_full_screen_rows_bg_img_animation.'" data-animation-speed="'.$page_full_screen_rows_animation_speed.'" data-content-overflow="'.$page_full_screen_rows_content_overflow.'" data-mobile-disable="'.$page_full_screen_rows_mobile_disable.'" data-dot-navigation="'.$page_full_screen_rows_dot_navigation.'" data-footer="'.$page_full_screen_rows_footer.'" data-anchors="'.$page_full_screen_rows_anchors.'">';
-
-				 if(have_posts()) : while(have_posts()) : the_post(); 
-					
-					 the_content(); 
-		
-				 endwhile; endif; 
-				
-			if($page_full_screen_rows == 'on') echo '</div>'; ?>
-
-		</div><!--/row-->
-
-		
-	</div><!--/container-->
-
-
     <!-- Filter and Produkts -->
+
+    <!-- Category Filter -->
 	
         <div class="filter--row">
         <div class="filter--container">
                  <a href="#" class="btn">Change to UL</a>
                  <div class="filter--main">
                     <input type="radio" name="product" id="applications" >
-                    <label class="filter--label" for="applications">Applications</label>
+                    <label data-filter="applications" class="filter--label" for="applications">Applications</label>
                     <input type="radio" name="product" id="products" checked>
-                    <label class="filter--label" for="products">Products</label>
+                    <label data-filter="products" class="filter--label" for="products">Products</label>
                     </div>
                  </div>
-
         </div>
+
+        <!-- Products Filter -->
+
         <div class="products--wrapper">
             <div class="filter--categories">
-                 <input type="checkbox" id="all" checked>
-                 <label class="filter--item" for="all">All</label><br>
-                 <input type="checkbox" id="coatings">
-                 <label class="filter--item" for="coatings">Coatings and Wraps</label>
+                <input type="checkbox" id="all" checked>
+                <label class="filter--item" for="all">All</label><br>                 
+                 <?php 
+                $selected_category = 'products';
+                if (isset($_GET['category'])){
+                    $selected_category = $_GET['category'];
+                } 
+                // Products
+                 if($selected_category && $selected_category === 'products'){
+                    $terms = get_terms('category');
+                    if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){                        
+                        foreach ( $terms as $term ) {
+                            if ($term->name !== 'Products' && $term->name !== 'Applications' && $term->parent === 23){ ?>
+                            <input type="checkbox" id="<?= $term->slug?>">
+                            <label class="filter--item" for="<?= $term->slug ?>"><?= $term->name?></label><br>
+                <?php }}}}
+                // Applications
+                 if($selected_category && $selected_category === 'applications'){
+                    $terms = get_terms('category');
+                    if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){                        
+                        foreach ( $terms as $term ) {
+                            if ($term->name !== 'Products' && $term->name !== 'Applications' && $term->parent === 25){ ?>
+                            <input type="checkbox" id="<?= $term->slug?>">
+                            <label class="filter--item" for="<?= $term->slug ?>"><?= $term->name?></label><br>
+                <?php }}}}
+                ?>       
             </div>
+
             <div class="products--paged">
-
             <?php 
-                $dummy = [
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-                    ['image' => 'pyro-safe_flammotect-a.jpg',
-                    'title' => 'Pyro-Safe®',
-                    'subtitle' => 'Flammotect-A',
-                    'copy' => 'Filler – endothermic'
-                ],
-            ];
-                for($i = 0; $i < count($dummy); $i++){
-                    
-              
+                if (isset($selected_category)){
+                    $selected_category;
+                } else {
+                    $selected_category = 'products';
+                }
 
-            ?>
-
-                 <a href="#" class="products--item">
-                    <img src="/content/uploads/<?= $dummy[$i]['image'] ?>" alt="" class="products--image">
-                    <div class="products--description">
-                        <h3 class="products--title"><?= $dummy[$i]['title'] ?></h3>
-                        <h4 class="products--subtitle"><?= $dummy[$i]['subtitle'] ?></h4>
-                        <p class="products--copy"><?= $dummy[$i]['copy'] ?></p>
-                    </div>
-             
-            
-           
+                // Product
+              if($selected_category != 'applications'){
+                query_posts(array('category_name' => $selected_category, 'posts_per_page' => 12, 'paged' => $paged));
+                if (have_posts()): while (have_posts()): the_post();        
+            ?>               
+            <a href="<?php echo get_relative_permalink(get_permalink(get_the_ID())); ?>" class="products--item products <?php 
+                //strip_tags(get_the_category_list(" ")) 
+                if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){                    
+                    foreach((get_the_category()) as $category) {
+                        if ($category->category_parent  == '23') {
+                            echo $category->slug. " ";
+                        }
+                    }
+                }        
+                ?>">   
+                <img src="<?php the_post_thumbnail_url();?>" alt="" class="products--image">
+                <div class="products--description">
+                    <h3 class="products--title"><?php the_title();?></h3>                        
+                    <p class="products--copy"><?=get_post_meta($post->ID, 'post_subtitle', true);?></p>
+                </div>
             </a>
-
-            <?php 
-              }?>
+                <?php
                  
+                    endwhile;endif;
+
+              } else {
+                query_posts(array('category_name' => 'applications', 'posts_per_page' => 12, 'paged' => $paged));
+                if (have_posts()): while (have_posts()): the_post();        
+            ?>               
+            <a href="<?php echo get_relative_permalink(get_permalink(get_the_ID())); ?>" class="products--item applications <?php 
+                                   
+                    foreach((get_the_category()) as $category) {
+                        if ($category->category_parent  == '25') {
+                            echo $category->slug. " ";
+                        }
+                    }
+                       
+                ?>">   
+                <img src="<?php the_post_thumbnail_url();?>" alt="" class="products--image">
+                <div class="products--description">
+                    <h3 class="products--title"><?php the_title();?></h3>                        
+                    <p class="products--copy"><?=get_post_meta($post->ID, 'post_subtitle', true);?></p>
+                </div>
+            </a>
+                <?php
+                 
+                    endwhile;endif;
+              }
+                    ?>
+
+
+            
+        
+        <?php the_posts_pagination( array(
+                        'mid_size'  => 2,
+                        'prev_text' => __( '<', 'textdomain' ),
+                        'next_text' => __( '>', 'textdomain' ),
+                    ) );?>
         </div>
 </div><!--/container-wrap-->
 

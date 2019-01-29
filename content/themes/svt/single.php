@@ -1,6 +1,9 @@
 
 <?php get_header(); ?>
 
+<style>
+	body {background: white!important}
+</style>
 
 
 <?php 
@@ -19,13 +22,49 @@ $blog_social_style = (!empty($options['blog_social_style'])) ? $options['blog_so
 $enable_ss = (!empty($options['blog_enable_ss'])) ? $options['blog_enable_ss'] : 'false';
 
 ?>
-<div class="header"></div>
+<!-- Header -->
+<div id="page-header-wrap" data-animate-in-effect="zoom-out" data-midnight="light" class="" style="height: 490px; margin-top: 0px;">	    <div class="loaded" data-animate-in-effect="zoom-out" id="page-header-bg" data-midnight="light" data-text-effect="none" data-bg-pos="center" data-alignment="left" data-alignment-v="top" data-parallax="1" data-height="490" style="background-color: rgb(0, 0, 0); height: 490px; opacity: 1; overflow: visible; z-index:0">
+			
+			<div class="page-header-bg-image" style="background-image: url(/content/uploads/header_products-1.jpg);"></div> 
+			<div class="container">
+						 <div class="row" style="top: 0px; visibility: visible;">
+							<div class="col span_6" style="opacity: 1; top: 255px;">
+								<div class="inner-wrap">
+									<h1 style="color: black">Fire Protection Worldwide</h1>
+									<span class="subheader"></span>
+								</div>
+								 
+																</div>
+						  </div>
+					  
+					  					
+					
+				
+			</div>
+		</div>
+
+	   </div>
+<!-- Header -->
+
+
+<div class="filter--row">
+        <div class="filter--container">
+                 <a href="/products" class="back">Back to product overview</a>
+              
+                 </div>
+
+        </div>
 
 <?php
 
 if(have_posts()) : while(have_posts()) : the_post();
 
-	//nectar_page_header($post->ID); 
+	?><div class="container" style="background: white">
+	<div class="post--content">
+	<?php the_content(); ?>
+	</div>
+	</div>
+	<?php
 
 endwhile; endif;
 
@@ -34,34 +73,8 @@ endwhile; endif;
 
 
 			
-		<div class="row">
-			
-			<?php 
 
-			if ( function_exists( 'yoast_breadcrumb' ) ){ yoast_breadcrumb('<p id="breadcrumbs">','</p>'); } 
-
-			
-
-			
-			
-				
-				
-				 wp_link_pages(); 
 					
-
-						
-						
-					?>
-			
-
-			
-
-
-			</div><!--/span_9-->
-			
-			
-			
-			
 		</div><!--/row-->
 
 		

@@ -1,0 +1,344 @@
+2019-01-29T10:13:46+00:00 CRITICAL syntax error, unexpected end of file in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 179
+
+2019-01-29T10:25:21+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_link() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:72
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 72
+
+2019-01-29T10:25:26+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_link() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:72
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 72
+
+2019-01-29T10:25:31+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_link() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:72
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 72
+
+2019-01-29T10:25:42+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_link() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:72
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 72
+
+2019-01-29T10:25:44+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_link() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:72
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 72
+
+2019-01-29T10:26:40+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_link() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:72
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 72
+
+2019-01-29T10:27:37+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_link() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:72
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 72
+
+2019-01-29T10:27:41+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_link() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:72
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 72
+
+2019-01-29T10:28:57+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_link() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:73
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T10:32:29+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_link() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:73
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T10:32:37+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_link() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:73
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T10:32:51+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_permalink() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:73
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T10:32:58+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_permalink() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:73
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T10:33:01+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_permalink() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:73
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T10:33:21+00:00 CRITICAL Uncaught Error: Call to undefined function get_page_permalink() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:73
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T10:40:16+00:00 CRITICAL Cannot redeclare get_relative_permalink() (previously declared in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:71) in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 71
+
+2019-01-29T10:40:36+00:00 CRITICAL Cannot redeclare get_relative_permalink() (previously declared in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:71) in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 71
+
+2019-01-29T10:40:46+00:00 CRITICAL Cannot redeclare get_relative_permalink() (previously declared in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:71) in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 71
+
+2019-01-29T10:40:57+00:00 CRITICAL Cannot redeclare get_relative_permalink() (previously declared in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:71) in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 71
+
+2019-01-29T10:41:16+00:00 CRITICAL Cannot redeclare get_relative_permalink() (previously declared in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:71) in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 71
+
+2019-01-29T10:41:29+00:00 CRITICAL Uncaught Error: Call to undefined function get_relative_permalink() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:73
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T10:52:40+00:00 CRITICAL Uncaught Error: Call to undefined function string() in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:73
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T10:53:59+00:00 CRITICAL syntax error, unexpected '$cats' (T_VARIABLE) in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 74
+
+2019-01-29T11:06:29+00:00 CRITICAL syntax error, unexpected 'get_the_category_list' (T_STRING) in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T12:07:49+00:00 CRITICAL syntax error, unexpected 'wp_list_categories' (T_STRING), expecting ',' or ';' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T12:07:49+00:00 CRITICAL syntax error, unexpected 'wp_list_categories' (T_STRING), expecting ',' or ';' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T12:11:01+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 88
+
+2019-01-29T12:11:24+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 88
+
+2019-01-29T12:11:27+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 88
+
+2019-01-29T12:13:15+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 75
+
+2019-01-29T12:18:13+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 67
+
+2019-01-29T12:22:59+00:00 CRITICAL syntax error, unexpected '=', expecting ')' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 67
+
+2019-01-29T13:19:33+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 81
+
+2019-01-29T13:21:24+00:00 CRITICAL Uncaught Error: Function name must be a string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:65
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 65
+
+2019-01-29T13:21:28+00:00 CRITICAL Uncaught Error: Function name must be a string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:65
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 65
+
+2019-01-29T13:21:32+00:00 CRITICAL Uncaught Error: Function name must be a string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:65
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 65
+
+2019-01-29T13:21:33+00:00 CRITICAL Uncaught Error: Function name must be a string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:65
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 65
+
+2019-01-29T13:21:44+00:00 CRITICAL Uncaught Error: Function name must be a string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:65
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 65
+
+2019-01-29T13:21:59+00:00 CRITICAL Uncaught Error: Function name must be a string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:65
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 65
+
+2019-01-29T13:22:01+00:00 CRITICAL Uncaught Error: Function name must be a string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:65
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 65
+
+2019-01-29T13:22:57+00:00 CRITICAL Uncaught Error: Function name must be a string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:65
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 65
+
+2019-01-29T13:23:06+00:00 CRITICAL Uncaught Error: Function name must be a string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:65
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 65
+
+2019-01-29T13:23:08+00:00 CRITICAL Uncaught Error: Function name must be a string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php:65
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#3 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 65
+
+2019-01-29T13:26:49+00:00 CRITICAL syntax error, unexpected '<' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 90
+
+2019-01-29T14:21:12+00:00 CRITICAL syntax error, unexpected '}' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 63
+
+2019-01-29T14:22:09+00:00 CRITICAL syntax error, unexpected end of file in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T14:24:13+00:00 CRITICAL syntax error, unexpected '}' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 50
+
+2019-01-29T14:25:12+00:00 CRITICAL syntax error, unexpected '}' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 50
+
+2019-01-29T14:27:56+00:00 CRITICAL syntax error, unexpected '}' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 40
+
+2019-01-29T15:29:55+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 73
+
+2019-01-29T15:38:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 1 passed in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php on line 74 and exactly 2 expected in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php:1187
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php(74): get_the_terms(25)
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#3 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#4 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php in Zeile 1187
+
+2019-01-29T15:38:53+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 1 passed in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php on line 74 and exactly 2 expected in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php:1187
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php(74): get_the_terms(25)
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#3 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#4 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php in Zeile 1187
+
+2019-01-29T15:39:06+00:00 CRITICAL Object of class WP_Error could not be converted to string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 74
+
+2019-01-29T15:39:16+00:00 CRITICAL Object of class WP_Error could not be converted to string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 74
+
+2019-01-29T15:39:23+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 1 passed in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php on line 74 and exactly 2 expected in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php:1187
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php(74): get_the_terms('applications')
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#3 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#4 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php in Zeile 1187
+
+2019-01-29T15:39:24+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 1 passed in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php on line 74 and exactly 2 expected in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php:1187
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php(74): get_the_terms('applications')
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#3 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#4 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php in Zeile 1187
+
+2019-01-29T15:39:32+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 0 passed in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php on line 74 and exactly 2 expected in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php:1187
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php(74): get_the_terms()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#3 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#4 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php in Zeile 1187
+
+2019-01-29T15:39:34+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 0 passed in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php on line 74 and exactly 2 expected in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php:1187
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php(74): get_the_terms()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#3 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#4 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php in Zeile 1187
+
+2019-01-29T15:39:38+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 0 passed in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php on line 74 and exactly 2 expected in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php:1187
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php(74): get_the_terms()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#3 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#4 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php in Zeile 1187
+
+2019-01-29T15:39:48+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 0 passed in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php on line 74 and exactly 2 expected in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php:1187
+Stack trace:
+#0 /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php(74): get_the_terms()
+#1 /Users/tom/Documents/websites/svt-int/wp/wp-includes/template-loader.php(74): include('/Users/tom/Docu...')
+#2 /Users/tom/Documents/websites/svt-int/wp/wp-blog-header.php(19): require_once('/Users/tom/Docu...')
+#3 /Users/tom/Documents/websites/svt-int/index.php(17): require('/Users/tom/Docu...')
+#4 {main}
+  thrown in /Users/tom/Documents/websites/svt-int/wp/wp-includes/category-template.php in Zeile 1187
+
+2019-01-29T15:57:10+00:00 CRITICAL Object of class WP_Term could not be converted to string in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 48
+
+2019-01-29T15:59:36+00:00 CRITICAL syntax error, unexpected '$term' (T_VARIABLE), expecting ',' or ';' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 48
+

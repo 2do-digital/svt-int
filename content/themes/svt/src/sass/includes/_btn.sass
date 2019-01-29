@@ -8,3 +8,40 @@
     color: white
     font-weight: 700
     padding: 10px 20px
+.back
+    color: black
+    font-size: 0.825em
+    position: relative
+    margin-left: 30px
+    &:before
+        content: "<"
+        position: absolute
+        left: -30px
+        top: 50%
+        transform: translateY(-50%)
+        width: 20px
+        height: 20px
+        text-align: center
+        font-size: 2em
+        line-height: 21px
+        color: white
+        background: $main-color
+.link--download
+    color: #707070!important
+    //font-weight: 900
+    position: relative
+    margin-left: 20px
+    margin-bottom: 5px
+    margin-top: 5px
+    display: block
+    transition: all 200ms ease
+    &:hover
+        color: $main-color!important
+    &:before
+        content: "\f019"
+        font-family: "Font Awesome 5 Free"
+        font-weight: 900
+        position: absolute
+        left: -20px
+        top: 0
+        color: $main-color

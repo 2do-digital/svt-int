@@ -1,0 +1,55 @@
+table
+    border-collapse: collapse
+    width: 100%
+    tr
+        background: #F7F7F7
+        &:nth-child(even)
+            background: #fff
+        td
+            font-size: 0.825em!important
+            padding: 10px 15px
+            vertical-align: middle
+            width: 50%
+.product--toggle
+    .toggle > div
+        padding: 0!important
+    .toggle
+        box-shadow: $shadow
+        
+        h3
+            a
+                padding: 15px
+                font-weight: 900!important
+                text-transform: uppercase
+                background: #fff!important
+                color: $main-color!important
+                position: relative
+                &:after
+                    content: ""
+                    position: absolute
+                    right: 20px
+                    top: 50%
+                    //width: 10px
+                    //height: 10px
+                    border-bottom: 5px solid $main-color 
+                    border-left: 5px solid transparent 
+                    border-right: 5px solid transparent
+                    transform: translate(0, -50%) rotate(90deg)
+                    transition: all 200ms ease
+        &.open
+            h3
+                a
+                    background: #fff!important
+                    box-shadow: $shadow
+                    color: $main-color!important
+                    &:after
+                        content: ""
+                        position: absolute
+                        right: 20px
+                        top: 50%
+                        //width: 10px
+                        //height: 10px
+                        border-bottom: 5px solid $main-color 
+                        border-left: 5px solid transparent 
+                        border-right: 5px solid transparent
+                        transform: translate(0, -50%) rotate(0deg)
