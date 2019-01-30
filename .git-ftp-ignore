@@ -1,0 +1,8 @@
+.htaccess
+.gitignore
+.vscode
+gulpfile.js
+movefile.yml
+*.json
+wp-config.php
+
