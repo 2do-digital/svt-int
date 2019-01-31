@@ -49,7 +49,7 @@ function addOrUpdateUrlParam($name, $value)
         <div class="products--wrapper">
             <div class="filter--categories">
             <form action="" method="get">
-                <input type="checkbox" id="all" name="" checked>
+                <input  class="filter--input" type="checkbox" id="all" name="" checked>
                 <label class="filter--item" for="all">All</label><br>                 
                  <?php 
                 $selected_category = 'products';
@@ -62,7 +62,7 @@ function addOrUpdateUrlParam($name, $value)
                     if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){                        
                         foreach ( $terms as $i => $term ) {
                             if ($term->name !== 'Applications' && $term->parent === 25){ ?>
-                            <input type="checkbox"  name="filter<?= $i ?>" value="<?= $term->slug?>" id="<?= $term->slug?>">
+                            <input class="filter--input" type="checkbox"  name="filter<?= $i ?>" value="<?= $term->slug?>" id="<?= $term->slug?>">
                             <label class="filter--item" for="<?= $term->slug ?>"><?= $term->name?></label><br>
                 <?php }}}
                 ?>  <input  id="submit" type="submit" value="Filter"> </form>    
@@ -77,8 +77,8 @@ function addOrUpdateUrlParam($name, $value)
                 
                 foreach ($_GET as $key => $value)  {
                     $addition = "";
-                    if (next($_GET)) {$addition = '+';}
-                    $category_list = $value . $addition;               
+                    if (next($_GET)) {$addition = ',';}
+                    $category_list .= $value . $addition;               
             }
 
                 $app_args = array();

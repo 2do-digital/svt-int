@@ -28,7 +28,7 @@ nectar_page_header($post->ID);
         <div class="products--wrapper">
             <div class="filter--categories">
             <form action="" method="get">
-                <input type="checkbox" id="all" name="" checked>
+                <input class="filter--input" type="checkbox" id="all" name="" checked>
                 <label class="filter--item" for="all">All</label><br>                 
                  <?php 
                 $selected_category = 'products';
@@ -40,7 +40,7 @@ nectar_page_header($post->ID);
                     if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){                        
                         foreach ( $terms as $i => $term ) {
                             if ($term->name !== 'Products' && $term->parent === 23){ ?>
-                            <input type="checkbox" name="filter<?= $i ?>" value="<?= $term->slug?>" id="<?= $term->slug?>">
+                            <input  class="filter--input" type="checkbox" name="filter<?= $i ?>" value="<?= $term->slug?>" id="<?= $term->slug?>">
                             <label class="filter--item" for="<?= $term->slug ?>"><?= $term->name?></label><br>
                 <?php }}}
   
@@ -56,18 +56,20 @@ nectar_page_header($post->ID);
                 
                        foreach ($_GET as $key => $value)  {
                            $addition = "";
-                           if (next($_GET)) {$addition = '+';}
-                           $category_list = $value . $addition;               
+                           if (next($_GET)) {$addition = ',';}
+                           $category_list .= $value . $addition;               
                    }
        
                        $app_args = array();
+
+                       
        
                        $products_query = new WP_Query(array(
                            "cat"       =>  23,
                            "category_name" => $category_list,
-                           "exact"     => true,
                            "post_per_page" => 8,
-                           "nopaging" => false
+                           "nopaging" => false,
+                           "exact"      => true
        
                        ));
        
