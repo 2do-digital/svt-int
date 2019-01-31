@@ -1,0 +1,14 @@
+2019-01-31T07:44:19+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in /Users/tom/Documents/websites/svt-int/content/themes/svt/applications.php in Zeile 99
+
+2019-01-31T07:44:24+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in /Users/tom/Documents/websites/svt-int/content/themes/svt/applications.php in Zeile 99
+
+2019-01-31T07:46:42+00:00 CRITICAL syntax error, unexpected 'query_posts' (T_STRING) in /Users/tom/Documents/websites/svt-int/content/themes/svt/applications.php in Zeile 78
+
+2019-01-31T07:52:54+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /Users/tom/Documents/websites/svt-int/content/themes/svt/applications.php in Zeile 108
+
+2019-01-31T08:01:35+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' in /Users/tom/Documents/websites/svt-int/content/themes/svt/applications.php in Zeile 77
+
+2019-01-31T08:15:48+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in /Users/tom/Documents/websites/svt-int/content/themes/svt/applications.php in Zeile 78
+
+2019-01-31T08:31:33+00:00 CRITICAL syntax error, unexpected '=', expecting ')' in /Users/tom/Documents/websites/svt-int/content/themes/svt/products.php in Zeile 70
+

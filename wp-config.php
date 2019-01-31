@@ -68,18 +68,21 @@ $table_prefix = '2do_';
 define('WP_DEBUG', true); // default is FALSE
 define('WP_MEMORY_LIMIT', '64M');
 
+define( 'WP_CONTENT_DIR', dirname( ABSPATH ) . '/content' );
+define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
+
+
+
+
+/* That's all, stop editing! Happy blogging. */
+
+/** Absolute path to the WordPress directory. */
 define('WP_CONTENT_DIR', dirname(ABSPATH) . '/content');
 define('WP_CONTENT_URL', '/content');
 
 define('WP_HOME', 'http://svtinternational.digital');
 define('WP_SITEURL', 'http://svtinternational.digital/wp');
 
-/* That's all, stop editing! Happy blogging. */
-
-/** Absolute path to the WordPress directory. */
-if (!defined('ABSPATH')) {
-    define('ABSPATH', dirname(__FILE__) . '/');
-}
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
