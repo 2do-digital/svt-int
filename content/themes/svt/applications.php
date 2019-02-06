@@ -33,15 +33,15 @@ function addOrUpdateUrlParam($name, $value)
     <!-- Category Filter -->
 	
         <div class="filter--row">
-        <div class="filter--container">
+            <div class="filter--container">
                  <a href="#" class="btn">Change to UL</a>
                  <div class="filter--main">
                     <input type="radio" name="product" id="applications" checked>
                     <label onclick="window.location.href='/applications'" data-filter="applications" class="filter--label" for="applications">Applications</label>
                     <input type="radio" name="product" id="products" >
                     <label onclick="window.location.href='/products'" data-filter="products" class="filter--label" for="products">Products</label>
-                    </div>
-                 </div>
+                </div>
+            </div>
         </div>
 
         <!-- Products Filter -->
@@ -83,12 +83,25 @@ function addOrUpdateUrlParam($name, $value)
 
                 $app_args = array();
 
+
+                // Check for static Page
+
+                if ( get_query_var('paged') ) {
+                    $paged = get_query_var('paged');                    
+                } elseif ( get_query_var('page') ) {                
+                    $paged = get_query_var('page');                    
+                } else {                
+                    $paged = 1;                    
+                }
+
+
                 $applicationsQuery = new WP_Query(array(
                     "cat"       =>  25,
                     "category_name" => $category_list,
                     "exact"     => true,
                     "post_per_page" => 8,
-                    "nopaging" => false
+                    "nopaging" => false,
+                    "paged" => $paged
 
                 ));
 
@@ -116,29 +129,26 @@ function addOrUpdateUrlParam($name, $value)
                 ?>
                 <div class="pagination"> 
 
-     <?php   echo paginate_links( array(
-            'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
-            'total'        => $applicationsQuery->max_num_pages,
-            'current'      => max( 1, get_query_var( 'paged' ) ),
-            'format'       => '?paged=%#%',
-            'show_all'     => false,
-            'type'         => 'plain',
-            'end_size'     => 2,
-            'mid_size'     => 1,
-            'prev_next'    => true,
-            'prev_text'    => sprintf( '<i></i> %1$s', __( '<', 'text-domain' ) ),
-            'next_text'    => sprintf( '%1$s <i></i>', __( '>', 'text-domain' ) ),
-            'add_args'     => false,
-            'add_fragment' => '',
-        ) );
-    ?>
-</div>
-         <?php        
-                wp_reset_postdata();
-                
-               
+                    <?php   echo paginate_links( array(
+                            'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+                            'total'        => $applicationsQuery->max_num_pages,
+                            'current'      => max( 1, get_query_var( 'paged' ) ),
+                            'format'       => '?paged=%#%',
+                            'show_all'     => false,
+                            'type'         => 'plain',
+                            'end_size'     => 2,
+                            'mid_size'     => 1,
+                            'prev_next'    => true,
+                            'prev_text'    => sprintf( '<i></i> %1$s', __( '<', 'text-domain' ) ),
+                            'next_text'    => sprintf( '%1$s <i></i>', __( '>', 'text-domain' ) ),
+                            'add_args'     => false,
+                            'add_fragment' => '',
+                        ) );
                     ?>
-
+                </div>
+                <?php wp_reset_postdata(); ?>
+            </div>
+        </div>
 
 </div><!--/container-wrap -->
 

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-29 13:40:16+0000\n"
+"PO-Revision-Date: 2019-02-05 12:34:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13813,7 +13813,7 @@ msgstr "Es gibt einige Probleme mit den Positionen in deinem Warenkorb. Bitte ge
 #. translators: $1 and $2 opening and closing emphasis tags respectively
 #: templates/checkout/payment.php:42
 msgid "Since your browser does not support JavaScript, or it is disabled, please ensure you click the %1$sUpdate Totals%2$s button before placing your order. You may be charged more than the amount stated above if you fail to do so."
-msgstr "Sollte dein Browser kein JavaScript unterstützen, oder wenn dieses deaktiviert wurde, stelle bitte sicher, das du den Button %1$sGesamtbetrag aktualisieren%2$s klickst, bevor du deine Bestellung abschickst. Wenn du das nicht tust, könnte es möglich sein, das du mehr bezahlen musst, als oben angegeben ist."
+msgstr "Da dein Browser kein JavaScript unterstützt oder dieses deaktiviert ist, klicke bitte auf jeden Fall auf den Button %1$sGesamtbetrag aktualisieren%2$s, bevor du deine Bestellung abschließt. Anderenfalls könnte dir ein höherer Betrag in Rechnung gestellt werden, als derzeit oben angezeigt wird."
 
 #. translators: %s: number of orders
 #: includes/libraries/action-scheduler/classes/ActionScheduler_wpPostStore_PostStatusRegistrar.php:37
@@ -14837,11 +14837,6 @@ msgstr "Beschreibung der Zahlungsmethode, die Kunden auf der Website sehen."
 msgid "Sorry, the minimum allowed order total is 0.50 to use this payment method."
 msgstr "Entschuldigung, aber die Mindestbestellsumme für diese Zahlungsmethode beträgt 0,50."
 
-#: includes/gateways/paypal/includes/settings-paypal.php:28
-#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:206
-msgid "This controls the description which the user sees during checkout."
-msgstr "Dies steuert die Beschreibung, welche der Benutzer beim Bezahlvorgang sieht."
-
 #: includes/gateways/paypal/includes/settings-paypal.php:20
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:90
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:199
@@ -14855,6 +14850,11 @@ msgstr "Dies steuert die Beschreibung, welche der Benutzer beim Bezahlvorgang si
 #: includes/shipping/legacy-local-pickup/class-wc-shipping-legacy-local-pickup.php:104
 msgid "This controls the title which the user sees during checkout."
 msgstr "Dies steuert den Titel, den der Benutzer beim Bezahlvorgang sieht."
+
+#: includes/gateways/paypal/includes/settings-paypal.php:28
+#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:206
+msgid "This controls the description which the user sees during checkout."
+msgstr "Dies steuert die Beschreibung, welche der Benutzer beim Bezahlvorgang sieht."
 
 #: includes/emails/class-wc-email-customer-reset-password.php:63
 msgid "Customer \"reset password\" emails are sent when customers reset their passwords."
@@ -19816,10 +19816,6 @@ msgstr "Wie oft dieser Gutschein von einem einzelnen Benutzer angewendet werden 
 msgid "Product categories for your store can be managed here. To change the order of categories on the front-end you can drag and drop to sort them. To see more categories listed click the \"screen options\" link at the top-right of this page."
 msgstr "Hier kannst du die Produktkategorien für deinen Shop verwalten. Um die Reihenfolge der Kategorien in der Besucheransicht (Frontend) zu ändern, kannst du diese per „Drag and Drop“ zur gewünschten Position ziehen. Um mehr Kategorien pro Bearbeiten-Seite auflisten zu lassen, klicke bitte oben rechts auf den Tab „Ansicht anpassen“."
 
-#: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:105
-msgid "Check this box if the coupon grants free shipping. A <a href=\"%s\" target=\"_blank\">free shipping method</a> must be enabled in your shipping zone and be set to require \"a valid free shipping coupon\" (see the \"Free Shipping Requires\" setting)."
-msgstr "Aktiviere diese Option, wenn der Gutschein einen kostenlosen Versand ermöglicht. Die Versandart <a href=\"%s\" target=\"_blank\">Kostenloser Versand</a> muss in der Versandzone aktiviert und die Einstellung „ein gültiger Versandkostenfrei-Gutschein\" wird benötigt, muss aktiviert sein (siehe die dortigen Einstellungen zu \"Kostenloser Versand benötigt\")."
-
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:506
 msgid "Customer notes about the order"
 msgstr "Kundenanmerkungen zur Bestellung"
@@ -19958,6 +19954,10 @@ msgstr "Bestellstatus"
 #: includes/class-wc-privacy-exporters.php:241
 msgid "Order Date"
 msgstr "Bestelldatum"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:105
+msgid "Check this box if the coupon grants free shipping. A <a href=\"%s\" target=\"_blank\">free shipping method</a> must be enabled in your shipping zone and be set to require \"a valid free shipping coupon\" (see the \"Free Shipping Requires\" setting)."
+msgstr "Aktiviere diese Option, wenn der Gutschein einen kostenlosen Versand ermöglicht. Die Versandart <a href=\"%s\" target=\"_blank\">Kostenloser Versand</a> muss in der Versandzone aktiviert und die Einstellung „ein gültiger Versandkostenfrei-Gutschein ist erforderlich“, muss aktiviert sein (siehe die dortigen Einstellungen zu \"Kostenloser Versand erforderlich\")."
 
 #: includes/class-wc-countries.php:782 includes/class-wc-countries.php:1035
 #: includes/class-wc-countries.php:1171
