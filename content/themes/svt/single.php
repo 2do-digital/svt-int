@@ -59,7 +59,7 @@ $enable_ss = (!empty($options['blog_enable_ss'])) ? $options['blog_enable_ss'] :
 
 if(have_posts()) : while(have_posts()) : the_post();
 
-	?><div class="container" style="background: white">
+	?><div class="container full--width" style="background: white">
 	<div class="post--content">
 	<?php the_content(); ?>
 	</div>

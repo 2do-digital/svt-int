@@ -40,3 +40,91 @@ h6
     font-weight: 700
     @media (max-width: 1000px)
         display: none
+
+//OWL SLIDER
+.product-preview-slider
+    .wpb_row, .wpb_content_element
+        margin-bottom: 0px
+    .product-preview-headline
+        font-weight: 700
+        text-transform: uppercase
+        padding-top: 10px
+        font-size: 16px
+        margin-bottom: 0px
+    .product-preview-subline
+        padding-bottom: 10px
+        margin-bottom: 0px
+        font-size: 16px
+        font-weight: 300
+    .product-preview-pic
+        margin-bottom: -1px !important
+    .product-preview-text
+        padding: 20px
+        p
+            padding-bottom: 0px
+    .owl-prev
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -60px
+        visibility: hidden
+        padding: 0px !important
+        margin: 0px !important
+        height: 50px
+        width: 50px
+        &:after
+            font-family: FontAwesome
+            content: "\f104"
+            font-size: 40px
+            line-height: 1.2
+            top: 0
+            height: 52px
+            width: 50px
+            display: block
+            position: absolute
+            background: #f49523
+            visibility: visible
+            transition: 0.5s
+            padding-right: 2px
+            @media (max-width: 560px)
+                display: none
+        &:hover
+            &:after
+                background: lighten($main-color, 10%)
+    .owl-next
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: -60px
+        visibility: hidden
+        padding: 0px !important
+        margin: 0px !important
+        height: 50px
+        width: 50px
+        &:after
+            font-family: FontAwesome
+            content: "\f105"
+            font-size: 40px
+            line-height: 1.2
+            top: 0
+            height: 52px
+            width: 50px
+            display: block
+            position: absolute
+            background: $main-color
+            visibility: visible
+            transition: 0.5s
+            padding-left: 2px
+            @media (max-width: 560px)
+                display: none
+        &:hover
+            &:after
+                background: lighten($main-color, 10%)
+    .owl-dots
+        display: none
+    .owl-nav.disabled
+        margin-top: 0px
+    .reference-preview-img
+        min-height: 300px
+    .svt-boxshadow
+        box-shadow: $shadow
