@@ -49,7 +49,10 @@ $enable_ss = (!empty($options['blog_enable_ss'])) ? $options['blog_enable_ss'] :
 
 <div class="filter--row">
         <div class="filter--container">
-                 <a href="/products" class="back">Back to product overview</a>
+		
+                 <a href="<?php echo get_post_meta( get_the_ID(), 'backlink', true ) ?  get_post_meta( get_the_ID(), 'backlink', true ) : "/products" ?>" class="back">Back to <?php 
+					echo get_post_meta( get_the_ID(), 'backlink', true ) ?  "Applications " : "Products "
+				 ?>overview</a>
               
                  </div>
 

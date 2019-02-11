@@ -1,6 +1,7 @@
 .post--content
     max-width: 900px
     margin: 0px auto
+    padding: 20px
 .product--detail
     margin: 40px auto!important
     display: flex
@@ -8,6 +9,12 @@
     padding: 0
     box-shadow: $shadow
     border-top: 6px solid $main-color
+    .col
+        display: flex
+        flex-wrap: wrap
+        .column_container
+            min-width: 280px
+            flex: 1 0 48%
     img
         max-width: 100%
         height: auto
@@ -19,7 +26,7 @@
         padding: 20px
         display: flex
         align-items: center
-        height: 100%
+        height: auto
 .product--application-row
     padding-bottom: 0px!important
     padding-top: 20px!important
