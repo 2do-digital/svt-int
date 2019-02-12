@@ -1,10 +1,5 @@
 const filterInput = $('.filter--input')
 
-// filter.on('click', function () {
-//     let filterName = $(this).attr('data-filter')
-//     window.location = "/products?category=" + filterName
-//     console.log(filterName)
-// })
 
 // GET Variable aus URL
 
@@ -49,8 +44,3 @@ filterInput.change(function () {
     }
 })
 
-
-
-// if (getQueryVariable('category') === 'applications') {
-//     document.getElementById('applications').checked = true
-// } else { console.log('false') }

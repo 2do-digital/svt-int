@@ -49,23 +49,61 @@ function addOrUpdateUrlParam($name, $value)
         <div class="products--wrapper">
             <div class="filter--categories">
             <form action="" method="get">
-                <input  class="filter--input" type="checkbox" id="all" name="" checked>
-                <label class="filter--item" for="all">All</label><br>                 
-                 <?php 
-                $selected_category = 'products';
-                if (isset($_GET['category'])){
-                    $selected_category = $_GET['category'];
-                }                 
-                // Applications
+            <?php 
+
+            // wp_list_categories(array(
+            //     'child_of' => 43,
+            //     'show_option_all' => 'Show all',        
+            // ));
+
+         //print(get_category(43));
+    
+           
+                //   Fire-Rating
+                     wp_dropdown_categories(array(
+                                 
+                        'show_option_all' => 'Fire Rating',
+                        'child_of' => 43,
+                        'name' => 'firerating',
+                        'hierarchical' => 1,
+                        'tab_index' => 1, 
+                        'selected' => isset($_GET['firerating']) ? $_GET['firerating'] : 0,
+                        'class' => "filter--dropdown",
+                        'taxonomy' => 'category',
+                        'value_field' => 'slug'
+                        )
+                     );
+                     
+                     
+                //   Allowed-services
+                wp_dropdown_categories(array(
+                    'show_option_all' => "Allowed Services",
+                    'child_of' => 53,
+                    'name' => 'allowed',
+                    'hierarchical' => 1,
+                    'tab_index' => 1, 
+                    'selected' => isset($_GET['allowed']) ? $_GET['allowed'] : 0,
+                    'class' => "filter--dropdown",
+                    'taxonomy' => 'category',
+                    'value_field' => 'slug'
+                ));
+                        
+                //   Installation in
+                    wp_dropdown_categories(array(
+                        'show_option_all' => "Installation in",
+                        'child_of' => 49,
+                        'name' => 'installation',
+                        'hierarchical' => 1,
+                        'tab_index' => 1, 
+                        'selected' => isset($_GET['installation']) ? $_GET['installation'] : 0,
+                        'class' => "filter--dropdown",
+                        'taxonomy' => 'category',
+                        'value_field' => 'slug'
+                    ));
+                     ?>
+                     
                  
-                    $terms = get_terms('category');
-                    if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){                        
-                        foreach ( $terms as $i => $term ) {
-                            if ($term->name !== 'Applications' && $term->parent === 25){ ?>
-                            <input class="filter--input" type="checkbox"  name="filter<?= $i ?>" value="<?= $term->slug?>" id="<?= $term->slug?>">
-                            <label class="filter--item" for="<?= $term->slug ?>"><?= $term->name?></label><br>
-                <?php }}}
-                ?>  <input  id="submit" type="submit" value="Filter"> </form>    
+                <input id="submit" class="appSubmit" type="submit" value="Filter"> </form>    
             </div>
 
             <div class="products--paged">
@@ -77,8 +115,10 @@ function addOrUpdateUrlParam($name, $value)
                 
                 foreach ($_GET as $key => $value)  {
                     $addition = "";
-                    if (next($_GET)) {$addition = ',';}
-                    $category_list .= $value . $addition;               
+                    if($value === 0){} else{
+                        if (next($_GET)) {$addition = ',';}
+                        $category_list .= $value . $addition;               
+                    }
             }
 
                 $app_args = array();
@@ -94,16 +134,39 @@ function addOrUpdateUrlParam($name, $value)
                     $paged = 1;                    
                 }
 
+          
 
+                $category_names = array();
+
+                if(isset($_GET['firerating']) || isset($_GET['allowed']) || isset($_GET['installation'])){
+                    $fire = $_GET['firerating'];
+                    $allow = $_GET['allowed'];
+                    $install = $_GET['installation'];
+                    isset($fire) && $fire !== "0" ? array_push($category_names, $fire) : null;
+                    isset($allow) && $allow !== "0" ? array_push($category_names, $allow) : null;
+                    isset($install) && $install !== "0" ? array_push($category_names, $install) : null;
+
+                    $output_cats = "";
+                    for($i = 0; $i < count($category_names); $i++){
+                        $output_cats .= $category_names[$i];
+                        $output_cats .= $i < count($category_names) - 1 ? "+" : "";                        
+                    }
+      
+                } else { 
+                    $output_cats = 'applications';}
+        
+
+            
                 $applicationsQuery = new WP_Query(array(
                     "cat"       =>  25,
-                    "category_name" => $category_list,
-                    "exact"     => true,
+                    "category_name" => $output_cats,
+                    //"exact"     => true,
                     "post_per_page" => 8,
                     "nopaging" => false,
                     "paged" => $paged
 
                 ));
+
 
                 while($applicationsQuery->have_posts()){
                     $applicationsQuery->the_post();
@@ -126,6 +189,10 @@ function addOrUpdateUrlParam($name, $value)
             </a>
                 <?php
                 }
+
+                if(!$applicationsQuery->have_posts()){
+                    echo "No results for your search";
+                };
                 ?>
                 <div class="pagination"> 
 
