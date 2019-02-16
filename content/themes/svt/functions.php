@@ -29,5 +29,12 @@ function get_relative_permalink( $url ) {
 }
 
 
+include( 'includes/shortcode-applications-filter.php' );
+include( 'includes/shortcode-products-filter.php' );
+
+
+
+
+
 
 ?>

@@ -31,10 +31,14 @@ function addOrUpdateUrlParam($name, $value)
     <!-- Filter and Produkts -->
 
     <!-- Category Filter -->
+    <?php 
+        
+       
+    ?>
 	
         <div class="filter--row">
-            <div class="filter--container">
-                 <!--<a href="#" class="btn">Change to UL</a>-->
+            <div class="filter--container apps">
+                 <a href="#" class="btn">Change to UL</a>
                  <div class="filter--main">
                     <input type="radio" name="product" id="applications" checked>
                     <label onclick="window.location.href='/applications'" data-filter="applications" class="filter--label" for="applications">Applications</label>
@@ -48,62 +52,66 @@ function addOrUpdateUrlParam($name, $value)
 
         <div class="products--wrapper">
             <div class="filter--categories">
-            <form action="" method="get">
-            <?php 
-
-            // wp_list_categories(array(
-            //     'child_of' => 43,
-            //     'show_option_all' => 'Show all',        
-            // ));
-
-         //print(get_category(43));
-    
-           
-                //   Fire-Rating
-                     wp_dropdown_categories(array(
-                                 
-                        'show_option_all' => 'Fire Rating',
-                        'child_of' => 43,
-                        'name' => 'firerating',
-                        'hierarchical' => 1,
-                        'tab_index' => 1, 
-                        'selected' => isset($_GET['firerating']) ? $_GET['firerating'] : 0,
-                        'class' => "filter--dropdown",
-                        'taxonomy' => 'category',
-                        'value_field' => 'slug'
-                        )
-                     );
-                     
-                     
-                //   Allowed-services
-                wp_dropdown_categories(array(
-                    'show_option_all' => "Allowed Services",
-                    'child_of' => 53,
-                    'name' => 'allowed',
-                    'hierarchical' => 1,
-                    'tab_index' => 1, 
-                    'selected' => isset($_GET['allowed']) ? $_GET['allowed'] : 0,
-                    'class' => "filter--dropdown",
-                    'taxonomy' => 'category',
-                    'value_field' => 'slug'
+                <?php
+            $fire_terms = get_terms(array(
+                "parent" => 43,
+                "taxonomy" => 'category',    
                 ));
-                        
-                //   Installation in
-                    wp_dropdown_categories(array(
-                        'show_option_all' => "Installation in",
-                        'child_of' => 49,
-                        'name' => 'installation',
-                        'hierarchical' => 1,
-                        'tab_index' => 1, 
-                        'selected' => isset($_GET['installation']) ? $_GET['installation'] : 0,
-                        'class' => "filter--dropdown",
-                        'taxonomy' => 'category',
-                        'value_field' => 'slug'
-                    ));
-                     ?>
-                     
-                 
-                <input id="submit" class="appSubmit" type="submit" value="Filter"> </form>    
+            $allowed_terms = get_terms(array(
+                "parent" => 53,
+                "taxonomy" => 'category',    
+                ));
+            $install_terms = get_terms(array(
+                "parent" => 49,
+                "taxonomy" => 'category',    
+                ));   
+                ?>
+
+      <form action="" class="filter--list" actions="get">
+      <!-- Fire Rating -->
+        <dl class="toggle--list"><dt class="toggle--header"><p>
+            Fire Rating
+        </p><span class="filter--arrow"></span></dt>
+        <dd class="toggle--body">
+      <?php                 
+        foreach ( $fire_terms as $i => $term ) {
+            if ($term->parent === 43){ ?>
+                <input  class="filter--input" type="checkbox" name="filter<?= $i ?>" value="<?= $term->slug?>" id="<?= $term->slug?>">
+                <label class="filter--item" for="<?= $term->slug ?>"><?= $term->name?></label><br>
+            <?php }}; ?>
+        </dd>   </dl> 
+        <!-- Allowed Services -->
+        <dl class="toggle--list">
+        <dt class="toggle--header"><p>
+            Allowed Services
+        </p><span class="filter--arrow"></span> </dt>
+        <dd class="toggle--body">
+      <?php                 
+        foreach ( $allowed_terms as $i => $term ) {
+            if ($term->parent === 53){ ?>
+                <input  class="filter--input" type="checkbox" name="filter<?= $i ?>" value="<?= $term->slug?>" id="<?= $term->slug?>">
+                <label class="filter--item" for="<?= $term->slug ?>"><?= $term->name?></label><br>
+            <?php }}; ?>
+            </dd></dl>  
+        <!-- Installation in  -->
+        <dl class="toggle--list">
+        <dt class="toggle--header"><p>
+            Installation in
+        </p><span class="filter--arrow"></span></dt>
+        <dd class="toggle--body">
+      <?php                 
+        foreach ( $install_terms as $i => $term ) {
+            if ($term->parent === 49){ ?>
+                <input  class="filter--input" type="checkbox" name="filter<?= $i ?>" value="<?= $term->slug?>" id="<?= $term->slug?>">
+                <label class="filter--item" for="<?= $term->slug ?>"><?= $term->name?></label><br>
+            <?php }}; ?>
+        </dd>    </dl>
+<?php
+     
+     
+
+ 
+    ?><input id="submit" class="appSubmit" type="submit" value="Filter"></form>  
             </div>
 
             <div class="products--paged">
@@ -116,7 +124,7 @@ function addOrUpdateUrlParam($name, $value)
                 foreach ($_GET as $key => $value)  {
                     $addition = "";
                     if($value === 0){} else{
-                        if (next($_GET)) {$addition = ',';}
+                        if (next($_GET)) {$addition = '+';}
                         $category_list .= $value . $addition;               
                     }
             }
@@ -134,32 +142,10 @@ function addOrUpdateUrlParam($name, $value)
                     $paged = 1;                    
                 }
 
-          
-
-                $category_names = array();
-
-                if(isset($_GET['firerating']) || isset($_GET['allowed']) || isset($_GET['installation'])){
-                    $fire = $_GET['firerating'];
-                    $allow = $_GET['allowed'];
-                    $install = $_GET['installation'];
-                    isset($fire) && $fire !== "0" ? array_push($category_names, $fire) : null;
-                    isset($allow) && $allow !== "0" ? array_push($category_names, $allow) : null;
-                    isset($install) && $install !== "0" ? array_push($category_names, $install) : null;
-
-                    $output_cats = "";
-                    for($i = 0; $i < count($category_names); $i++){
-                        $output_cats .= $category_names[$i];
-                        $output_cats .= $i < count($category_names) - 1 ? "+" : "";                        
-                    }
-      
-                } else { 
-                    $output_cats = 'applications';}
-        
-
             
                 $applicationsQuery = new WP_Query(array(
                     "cat"       =>  25,
-                    "category_name" => $output_cats,
+                    "category_name" => $category_list,
                     //"exact"     => true,
                     "post_per_page" => 8,
                     "nopaging" => false,

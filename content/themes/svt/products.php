@@ -62,17 +62,11 @@ nectar_page_header($post->ID);
                         $app_args = array();
 
                         if ( get_query_var('paged') ) {
-
-                            $paged = get_query_var('paged');
-                            
-                        } elseif ( get_query_var('page') ) {
-                        
-                            $paged = get_query_var('page');
-                            
-                        } else {
-                        
-                            $paged = 1;
-                            
+                            $paged = get_query_var('paged');                            
+                        } elseif ( get_query_var('page') ) {                        
+                            $paged = get_query_var('page');                            
+                        } else {                        
+                            $paged = 1;                            
                         }
 
                         

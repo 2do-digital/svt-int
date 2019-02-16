@@ -1,0 +1,108 @@
+.filter--list
+    width: 100%
+    box-shadow: $shadow
+    padding: 20px
+    background: $side_color
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    .toggle--list
+        flex: 1 0 30%
+        margin-right: 20px
+        border: 1px solid #ccc
+        border-radius: 3px
+        margin-bottom: 10px
+        .toggle--header
+            border-radius: 3px
+            min-width: 280px
+            display: block
+            padding: 0
+            position: relative
+            white-space: nowrap
+            color: #444
+            background-clip: padding-box
+            background-color: #fff
+            font-weight: 400
+            cursor: pointer
+            transition: all 200ms ease
+            p
+                padding: 10px 20px
+            .filter--arrow
+                display: inline-block
+                width: 22px
+                height: 100%
+                position: absolute
+                right: 0
+                top: 0
+                border-radius: 0 3px 3px 0
+                background-clip: padding-box
+                &:after
+                    position: absolute
+                    display: block
+                    content: ""
+                    top: 50%
+                    left: 50%
+                    border: 4px solid transparent
+                    border-top-color: #666
+                    margin-left: -7px
+                    margin-top: 3px
+                    transform: translateY(-50%)
+            &:hover
+                background: $main-color
+                color: white
+                border-color: $main-color
+                .filter--arrow
+                    &:after
+                        border-top-color: white
+            &.active
+                border-bottom: 1px solid lightgrey
+                .filter--arrow
+                    &:after
+                        border-bottom-color: #666
+                        border-top-color: transparent
+                        margin-top: -2px
+
+        .toggle--body
+            border-radius: 3px
+            overflow: hidden
+            background: #fff
+            padding: 10px 20px
+            .filter--item
+                white-space: normal
+                margin-top: 10px
+                color: #333!important
+                width: 100%
+                margin-right: 20px
+
+                span
+                    background: #fff
+        .toggle--header.active
+            .toggle--body
+                height: auto
+    input[type=submit]#submit 
+        padding: 10px 15px!important
+        margin-top: 2px
+.filter--categories
+    max-width: 320px
+    width: 100%
+    .filter--list
+        width: 100%
+        display: block
+        padding: 0
+        background: transparent
+        box-shadow: none
+        .toggle--list
+            width: 100%
+            margin: 0 0 10px 0
+            .toggle--header
+                width: 100%
+                min-width: 0
+#product--filter
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+    .filter--item
+        width: 20%
+        min-width: 250px
+        color: #333!important
+        margin-bottom: 10px
