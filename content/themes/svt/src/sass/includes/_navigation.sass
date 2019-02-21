@@ -27,6 +27,8 @@
                 color: lightgrey !important
                 font-style: italic
                 font-size: 14px
+                &::after
+                    display: none !important
     .right-aligned-menu-items
         height: 82px !important
         .buttons
@@ -35,6 +37,9 @@
             a
                 color: $main-color
                 padding-right: 43px !important
+                margin: 0px !important
+                &::after
+                    display: none !important
             &:before
                 content: "\f019"
                 font-family: "Font Awesome 5 Free"
@@ -43,9 +48,10 @@
                 right: 20px
                 top: 62px
                 color: $main-color
-            //&:hover
-                a
-                    color: black !important
+                transition: 0.3s ease-in-out
+            &:hover
+                &:before
+                    top: 58px
         #menu-item-26.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-26
             width: 228px
             cursor: pointer
@@ -55,6 +61,10 @@
                 padding-left: 40px !important
                 padding-right: 40px !important
                 pointer-events: none !important
+                margin-left: 0px !important
+                margin-right: 0px !important
+                &::after
+                    display: none !important
                 &:hover
                     color: white !important
                     &:after
@@ -127,3 +137,7 @@
 .references--buildings
     .owl-nav.disabled
         display: none
+
+#menu-item-27.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-27
+    &::after
+        display: none !important

@@ -920,7 +920,7 @@ body[data-header-search="false"][data-user-set-ocm="off"] #header-outer[data-lhe
 
 #header-outer[data-lhe="animated_underline"] header#top nav >ul >li:not([class*="button_"]) >a:after,
 body.material #slide-out-widget-area[class*="slide-out-from-right"] .off-canvas-menu-container li a:after,
-.material #header-secondary-outer[data-lhe="animated_underline"] nav >ul.sf-menu >li >a:after{-ms-transition:-webkit-transform .3s ease-out,border-color .3s ease-out;  -webkit-transition:-webkit-transform .3s ease-out,border-color .3s ease-out;  transition:transform .3s ease-out,border-color .3s ease-out;  position:absolute;  display:block;  bottom:-6px;  left:0;  width:100%;  -ms-transform:scaleX(0);  -webkit-transform:scaleX(0);  transform:scaleX(0);  border-top:2px solid #000;  content:'';  padding-bottom:inherit}
+.material #header-secondary-outer[data-lhe="animated_underline"] nav >ul.sf-menu >li >a:after{-ms-transition:-webkit-transform .3s ease-out,border-color .3s ease-out;  -webkit-transition:-webkit-transform .3s ease-out,border-color .3s ease-out;  transition:transform .3s ease-out,border-color .3s ease-out;  position:absolute;  display:block;  top:0px;  left:0;  width:100%;  -ms-transform:scaleX(0);  -webkit-transform:scaleX(0);  transform:scaleX(0);  border-top:5px solid #000;  content:'';  padding-bottom:inherit}
 
 #header-outer[data-lhe="animated_underline"] header#top nav >ul >li >a:hover:after, 
 #header-outer[data-lhe="animated_underline"] header#top nav >ul >li.sfHover >a:after, 
