@@ -547,7 +547,7 @@ body #header-outer[data-using-secondary="1"][data-permanent-transparent="1"]{top
 
 html .admin-bar #header-outer[data-using-secondary="1"][data-permanent-transparent="1"], .logged-in.buddypress #header-outer[data-using-secondary="1"][data-permanent-transparent="1"]{top:64px}
 
-header#top #logo{width:auto; max-width:none; display:block; line-height:22px; font-size:22px; letter-spacing:-1.5px; color:#444; font-family:'Open Sans'; font-weight:600}
+header#top #logo{width:auto; max-width:none; display:block; line-height:22px; font-size:22px; letter-spacing:-1.5px; color:#444; font-family:'Open Sans'; font-weight:600; margin-left:50px}
 
 header#top #logo.no-image{margin-top:4px}
 

@@ -187,7 +187,7 @@ if($perm_trans != 1 || $perm_trans == 1 && $bg_header == 'false' || $page_full_s
 	}
 ?>
 <div id="header-outer" data-has-menu="<?php echo $has_main_menu; ?>" <?php echo $transparency_markup; ?> data-using-pr-menu="<?php echo $using_pr_menu; ?>" data-mobile-fixed="<?php echo $mobile_fixed; ?>" data-ptnm="<?php echo $prependTopNavMobile;?>" data-lhe="<?php echo $headerLinkHoverEffect; ?>" data-user-set-bg="<?php echo $userSetBG; ?>" data-format="<?php echo $headerFormat; ?>" data-permanent-transparent="<?php echo $perm_trans; ?>" data-megamenu-rt="<?php echo $megamenuRemoveTransparent; ?>" data-remove-fixed="<?php echo $headerRemoveStickiness; ?>" data-cart="<?php echo ($woocommerce && !empty($options['enable-cart']) && $options['enable-cart'] == '1') ? 'true': 'false';?>" data-transparency-option="<?php if($disable_effect == 'on') { echo '0'; } else { echo $using_fw_slider; } ?>" data-box-shadow="<?php echo $header_box_shadow; ?>" data-shrink-num="<?php echo (!empty($options['header-resize-on-scroll-shrink-num'])) ? $options['header-resize-on-scroll-shrink-num'] : 6; ?>" data-full-width="<?php echo $fullWidthHeader; ?>" data-using-secondary="<?php echo ($using_secondary == 'header_with_secondary') ? '1' : '0'; ?>" data-using-logo="<?php if(!empty($options['use-logo'])) echo $options['use-logo']; ?>" data-logo-height="<?php if(!empty($options['logo-height'])) echo $options['logo-height']; ?>" data-m-logo-height="<?php if(!empty($options['mobile-logo-height'])) { echo $options['mobile-logo-height']; } else { echo '24'; } ?>" data-padding="<?php echo (!empty($options['header-padding'])) ? $options['header-padding'] : "28"; ?>" data-header-resize="<?php echo $headerResize; ?>">
-	
+
 	<?php if(empty($options['theme-skin'])) { 
 		get_template_part('includes/header-search'); 
 	} 
@@ -200,6 +200,16 @@ if($perm_trans != 1 || $perm_trans == 1 && $bg_header == 'false' || $page_full_s
 		<div class="container">
 			
 			<div class="row">
+
+				<div id="language--switcher">
+					<img src="/content/uploads/en.png" alt="english">
+					<div id="language--box">
+						<a href="https://international.svt.de/de/"><img src="/content/uploads/de.png" alt="german"></a>
+						<a href="http://svt-preview.de/buildings"><img src="/content/uploads/en.png" alt="english"></a>
+						<a href="http://svt.de/pl/"><img src="/content/uploads/pl.png" alt="polish"></a>
+						<a href="http://svt.de/ru/"><img src="/content/uploads/ru.png" alt="russian"></a>
+					</div>
+				</div>
 				  
 				<div class="col span_3">
 					
@@ -376,7 +386,6 @@ if($perm_trans != 1 || $perm_trans == 1 && $bg_header == 'false' || $page_full_s
 		</div><!--/container-->
 		
 	</header>
-	
 	
 	<?php if (!empty($options['enable-cart']) && $options['enable-cart'] == '1' && $theme_skin != 'material') { ?>
 		<?php
