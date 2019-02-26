@@ -13,4 +13,4 @@ $( "#language--switcher" ).click(function() {
     $( "#language--box" ).slideToggle( "fast", function() {
       // Animation complete.
     });
-  });
+});

@@ -40,6 +40,11 @@
                 color: $main-color
                 padding-right: 43px !important
                 margin: 0px !important
+                @media (max-width: 1500px)
+                    opacity: 0 !important
+                    padding-right: 0px !important
+                    width: 23px !important
+                    margin-right: 15px !important
                 &::after
                     display: none !important
             &:before
@@ -97,17 +102,28 @@
                 transform: rotate(45deg)
                 z-index: 9999
                 transition: ease-in-out 0.2s
-#menu-item-27.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-27
-    a
-        margin-left: 0px !important
-        pointer-events: none
-        cursor: default
-        padding-left: 0px !important
-        text-transform: lowercase
-        color: lightgrey !important
-        font-style: italic
-        font-size: 14px
-        visibility: visible !important
+    .protectyourvalues
+        a
+            margin-left: 0px !important
+            pointer-events: none !important
+            cursor: default !important
+            padding-left: 0px !important
+            text-transform: lowercase !important
+            color: lightgrey !important
+            font-style: italic !important
+            font-size: 14px !important
+            visibility: visible !important
+            &::after
+                display: none !important
+            @media (max-width: 1670px)
+                display: none !important
+            @media (max-width: 1380px)
+                display: block !important
+    .right-aligned-menu-items
+        .menu--grey
+            a
+                color: lightgrey !important
+
 
 .menuopen
     .menu-item-27
@@ -140,7 +156,3 @@
 .references--buildings
     .owl-nav.disabled
         display: none
-
-#menu-item-27.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-27
-    &::after
-        display: none !important

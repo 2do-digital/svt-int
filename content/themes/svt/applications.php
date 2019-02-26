@@ -38,7 +38,7 @@ function addOrUpdateUrlParam($name, $value)
 	
         <div class="filter--row">
             <div class="filter--container apps">
-                 <a href="#" class="btn">Change to UL</a>
+                 <a target="_blank" rel="noopener noreferrer" href="/content/uploads/2018-03-UL-Broschuere_LQ.pdf" class="btn">Further standards: UL</a>
                  <div class="filter--main">
                     <input type="radio" name="product" id="applications" checked>
                     <label onclick="window.location.href='/applications'" data-filter="applications" class="filter--label" for="applications">Applications</label>
