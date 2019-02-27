@@ -142,17 +142,28 @@
                         content: ""
                         height: 3px
                         width: 170px
-                        right: 0px
+                        left: 0px
                         top: -15px
                         background-color: $main-color
 
 // BURGER
-.slide-out-widget-area-toggle.mobile-icon.slide-out-widget-area-toggle
+.slide-out-widget-area-toggle.mobile-icon.fullscreen
+    @media only screen and (max-width: 1380px) and (min-width: 1px)
+        right: 5% !important
     @media only screen and (max-width: 1000px) and (min-width: 1px)
         top: 30% !important
         right: 5% !important
 
-
+// SLIDE DISABLE ON BUILDINGS //
 .references--buildings
     .owl-nav.disabled
         display: none
+
+// MOBILE DELETE //
+.off-canvas-menu-container
+    .protectyourvalues
+        display: none !important
+    .contactusnow
+        display: none !important
+
+    
