@@ -10,15 +10,29 @@
         display: flex
         align-items: center
         justify-content: flex-end //space-between
+        flex-wrap: wrap
         &.apps
             justify-content: space-between
         .filter--main
+            min-width: 260px
+            text-align: right
             .filter--label
                 color: black!important
+                &:last-child
+                    margin-right: 0
                 &:before
                     border-radius: 0
                     border: 1px solid #c7c7c7
                     box-shadow: 0 3px 6px rgba(black, 0.2)
+    @media (max-width: 500px)
+        .filter--container
+            display: block
+            text-align: center
+            .filter--main
+                text-align: center
+                margin-top: 20px
+
+
 
 body[data-fancy-form-rcs="1"] [type="radio"]:checked+label
     &:after
@@ -111,6 +125,29 @@ body[data-fancy-form-rcs="1"] [type="radio"]:checked+label
                     margin: 4px 0 0 0!important
                     padding: 0
 
+    @media (max-width: 840px)
+        margin-top: 0
+        display: block
+        .filter--categories
+            width: 100%
+            max-width: 100%
+            margin-bottom: 20px
+        .products--paged
+            padding: 0 15px
+            .products--item
+                min-width: 100px
+                flex: 1 0 45%
+                max-width: 50%
+                margin: 0 0 10px 0
+                &:nth-child(odd)
+                    margin-right: 5px
+                &:nth-child(even)
+                    margin-left: 5px
+                .products--description
+                    padding: 7px
+                    .products--copy
+                        font-size: 0.825rem
+                        line-height: 1.2
 
 
 
