@@ -119,9 +119,9 @@ header#top #toggle-nav, header#top #mobile-cart-link, header#top .span_9 > .slid
 #contact_form
     display: none
     position: fixed
-    top: 82px
+    top: 79px
     right: 0px
-    width: 228px
+    width: 210px
     background-color: $main-color
     padding: 40px 10px 10px 10px !important
     z-index: 20
@@ -149,8 +149,11 @@ header#top #toggle-nav, header#top #mobile-cart-link, header#top .span_9 > .slid
         background: none
         padding: 8px 0px
         font-size: 12px
+        width: 188px
     .ajax-loader
         display: none
+    span.wpcf7-form-control-wrap > span
+        color: $main-color !important
 
 
 // SOLUTIONS
@@ -291,3 +294,6 @@ header#top #toggle-nav, header#top #mobile-cart-link, header#top .span_9 > .slid
     &:hover
         bottom: 10px !important
         box-shadow: $shadow-big !important
+
+.reference-preview-img
+    min-height: 350px !important

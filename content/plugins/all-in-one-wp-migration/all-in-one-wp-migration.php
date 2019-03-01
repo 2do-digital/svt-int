@@ -5,12 +5,12 @@
  * Description: Migration tool for all your blog data. Import or Export your blog content with a single click.
  * Author: ServMask
  * Author URI: https://servmask.com/
- * Version: 6.85
+ * Version: 6.77
  * Text Domain: all-in-one-wp-migration
  * Domain Path: /languages
  * Network: True
  *
- * Copyright (C) 2014-2019 ServMask Inc.
+ * Copyright (C) 2014-2018 ServMask Inc.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,6 +33,13 @@
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
 
+// Deactivate Update Feature of this Plugin
+add_filter('site_transient_update_plugins', 'dd_remove_update_nag');
+function dd_remove_update_nag($value) {
+ unset($value->response['all-in-one-wp-migration/all-in-one-wp-migration.php']);
+ return $value;
+}
+
 // Check SSL Mode
 if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && ( $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ) ) {
 	$_SERVER['HTTPS'] = 'on';
@@ -44,13 +51,13 @@ define( 'AI1WM_PLUGIN_BASENAME', basename( dirname( __FILE__ ) ) . '/' . basenam
 // Plugin Path
 define( 'AI1WM_PATH', dirname( __FILE__ ) );
 
-// Plugin URL
+// Plugin Url
 define( 'AI1WM_URL', plugins_url( '', AI1WM_PLUGIN_BASENAME ) );
 
-// Plugin Storage URL
+// Plugin Storage Url
 define( 'AI1WM_STORAGE_URL', plugins_url( 'storage', AI1WM_PLUGIN_BASENAME ) );
 
-// Plugin Backups URL
+// Plugin Backups Url
 define( 'AI1WM_BACKUPS_URL', content_url( 'ai1wm-backups', AI1WM_PLUGIN_BASENAME ) );
 
 // Themes Absolute Path

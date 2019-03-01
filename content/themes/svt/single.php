@@ -30,7 +30,7 @@ $enable_ss = (!empty($options['blog_enable_ss'])) ? $options['blog_enable_ss'] :
 						 <div class="row" style="top: 0px; visibility: visible;">
 							<div class="col span_6" style="opacity: 1; top: 255px;">
 								<div class="inner-wrap">
-									<h1 style="color: black">Fire Protection Worldwide</h1>
+									<h1 style="color: black;">Fire Protection Worldwide</h1>
 									<span class="subheader"></span>
 								</div>
 								 
