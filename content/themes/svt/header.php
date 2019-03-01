@@ -204,9 +204,9 @@ if($perm_trans != 1 || $perm_trans == 1 && $bg_header == 'false' || $page_full_s
 				<div id="language--switcher">
 					<img src="/content/uploads/en.png" alt="english">
 					<div id="language--box">
-						<a href="https://international.svt.de/de/"><img src="/content/uploads/de.png" alt="german"></a>
-						<a href="http://svt.de/pl/"><img src="/content/uploads/pl.png" alt="polish"></a>
-						<a href="http://svt.de/ru/"><img src="/content/uploads/ru.png" alt="russian"></a>
+						<a href="https://international.svt.de/de/" title=”svt.de” ><img src="/content/uploads/de.png" alt="german"></a>
+						<a href="http://svt.de/pl/" title=”svt.pl” ><img src="/content/uploads/pl.png" alt="polish"></a>
+						<a href="http://svt.de/ru/" title=”svt.ru” ><img src="/content/uploads/ru.png" alt="russian"></a>
 					</div>
 				</div>
 				  
